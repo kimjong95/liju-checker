@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 10px;
   color: #333333; // 연한 베이지 글자색
 
   .header-text {
@@ -13,7 +13,7 @@
 // 모바일 웹 대응
 @media (max-width: 768px) {
   .header {
-    padding: 5px 10px;
+    padding: 5px 5px;
 
     .header-text {
       font-size: 1.5em;

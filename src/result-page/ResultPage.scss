@@ -1,42 +1,37 @@
 .result-layout {
   position: relative;
+  margin: 20px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  .header {
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
+  .result-header {
+    padding: 20px 10px; // 좌우 패딩 감소
     background-color: #e6c083;
   }
 
-  .content {
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
+  .result-content {
+    padding: 20px 10px; // 좌우 패딩 감소
     text-align: left;
-    word-wrap: break-word; // 긴 단어나 URL이 컨테이너의 너비를 초과할 경우 줄바꿈
-
-    h2,
-    p {
-      margin-left: 70px; // 이미지와 겹치지 않도록
-    }
+    word-wrap: break-word;
   }
 }
 
-.card-button {
-  display: block;
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 20px;
+.card-button-link,
+.card-button-kakao,
+.card-button-insta {
+  width: 100%; // 모바일에서 패딩 감소
+  padding: 10px 10px;
+  margin-top: 10px; // 버튼 간격 조정
   border: none;
   border-radius: 5px;
-  background-color: #d4af37;
-  color: #fdfcf5;
   font-size: 1.2em;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+.card-button-link {
+  background-color: #d4af37;
+  color: #fdfcf5;
 
   &:hover {
     background-color: #b4952d;
@@ -44,42 +39,32 @@
 }
 
 .card-button-kakao {
-  display: block;
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px;
   background-color: #ffaa00;
   color: #fdfcf5;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background-color 0.3s;
 
   &:hover {
-    background-color: #b4952d;
+    background-color: #dd9900;
   }
 }
 
 .card-button-insta {
-  display: block;
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px;
   background-color: #c13584;
   color: #fdfcf5;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background-color 0.3s;
 
   &:hover {
-    background-color: #b4952d;
+    background-color: #b02473;
   }
 }
 
-// ... (기존의 스타일)
+// 모바일 웹 대응
+@media (max-width: 768px) {
+  .card-button-link,
+  .card-button-kakao,
+  .card-button-insta {
+    padding: 8px 0;
+    font-size: 1em;
+  }
+}
 
 .popup {
   position: fixed;

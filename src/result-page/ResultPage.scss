@@ -1,0 +1,121 @@
+.result-layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #e6c083;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+    word-wrap: break-word; // 긴 단어나 URL이 컨테이너의 너비를 초과할 경우 줄바꿈
+
+    h2,
+    p {
+      margin-left: 70px; // 이미지와 겹치지 않도록
+    }
+  }
+}
+
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d4af37;
+  color: #fdfcf5;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #b4952d;
+  }
+}
+
+.card-button-kakao {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffaa00;
+  color: #fdfcf5;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #b4952d;
+  }
+}
+
+.card-button-insta {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c13584;
+  color: #fdfcf5;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #b4952d;
+  }
+}
+
+// ... (기존의 스타일)
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000; // 다른 요소 위에 표시
+
+  .popup-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .popup-content {
+    margin-bottom: 20px;
+  }
+
+  .popup-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d4af37; // 인스타그램 핑크색
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #b4952d; // 약간 어두운 핑크색
+    }
+  }
+}

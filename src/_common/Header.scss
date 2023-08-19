@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  color: #333333; // 연한 베이지 글자색
+
+  .header-text {
+    margin: 0;
+    text-align: left;
+    font-size: 2em;
+  }
+}
+
+// 모바일 웹 대응
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 10px;
+
+    .header-text {
+      font-size: 1.5em;
+    }
+  }
+}

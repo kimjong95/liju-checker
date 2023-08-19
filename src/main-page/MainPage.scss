@@ -1,0 +1,59 @@
+.card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .card-subtext {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
+
+// 모바일 웹 대응
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 15px;
+
+    .card-title {
+      font-size: 1.2em;
+    }
+
+    .card-subtext {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.card-button {
+  width: 100%; // 카드와 동일한 너비
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #d4af37; // 금색 배경
+  color: #fdfcf5; // 연한 베이지 글자색
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #b4952d; // 호버 시 약간 어두운 금색으로 변경
+  }
+}
+
+// 모바일 웹 대응
+@media (max-width: 768px) {
+  .card-button {
+    padding: 8px 0;
+    font-size: 1em;
+  }
+}
